@@ -14,7 +14,6 @@
 
     <dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" />
 
-    <!-- 扫描注解包路径，多个包用逗号分隔，不填pacakge表示扫描当前ApplicationContext中所有的类 -->
     <dubbo:annotation package="com.example.springboot.dubbo.consumer" />
 
     <dubbo:reference retries="0" version="0.0.0" interface="com.example.springboot.dubbo.service.DubboService" id="dubboService"/>
