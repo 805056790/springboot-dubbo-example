@@ -14,7 +14,7 @@
 
     <dubbo:registry protocol="zookeeper" address="127.0.0.1:2181"/>
 
-    <dubbo:annotation package="com.example.springboot.dubbo.consumer"/>
+    <dubbo:consumer check="false"/>
 
     <dubbo:reference retries="0" version="0.0.0" interface="x.springboot.dubbo.api.service.DubboService"
                      id="dubboService"/>

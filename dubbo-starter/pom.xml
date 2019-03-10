@@ -13,9 +13,22 @@
     <artifactId>dubbo-starter</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>dubbo-starter-api</module>
         <module>dubbo-starter-provider</module>
         <module>dubbo-starter-consumer</module>
     </modules>
+
+    <properties>
+        <spring.boot.dubbo.starter.version>0.2.0</spring.boot.dubbo.starter.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.alibaba.boot</groupId>
+                <artifactId>dubbo-spring-boot-starter</artifactId>
+                <version>${spring.boot.dubbo.starter.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>

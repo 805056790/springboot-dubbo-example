@@ -20,7 +20,7 @@ public class Response<T> implements Serializable{
     /**
      * 判断方法调用是否成功
      */
-    private boolean success;
+    private Boolean success;
 
     /**
      * 调用方法获得的信息, 如果success = true, result可以获得需要的信息.
@@ -32,6 +32,7 @@ public class Response<T> implements Serializable{
      */
     private String error;
 
+    @SuppressWarnings("BooleanMethodIsAlwaysInverted")
     public boolean isSuccess() {
         return this.success;
     }

@@ -2,7 +2,7 @@
  * Copyright (c) 2016. 杭州端点网络科技有限公司.  All rights reserved.
  */
 
-package x.springboot.dubbo.provider.service;
+package x.springboot.dubbo.provider.api;
 
 import x.springboot.dubbo.api.model.Response;
 import x.springboot.dubbo.api.model.User;
@@ -23,15 +23,16 @@ import java.util.Date;
 public class DubboServiceImpl implements DubboService {
 
     @Override
-    public Response<User> mockLogin(String userName, String password) {
-        if (Objects.equal("springboot", userName) && Objects.equal("dubbo", password)) {
+    public Response<User> mockLogin(String username, String password) {
+        if (Objects.equal("springboot", username) && Objects.equal("dubbo", password)) {
             User user = new User();
-            user.setId(1L);
-            user.setUserName(userName);
+            user.setId(122L);
+            user.setUsername(username);
             user.setPassword(password);
             user.setBirthday(new Date());
             return Response.ok(user);
         }
         return Response.failed("user.login.failed");
     }
+
 }

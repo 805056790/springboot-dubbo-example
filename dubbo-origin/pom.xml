@@ -14,7 +14,6 @@
     <artifactId>dubbo-origin</artifactId>
 
     <modules>
-        <module>dubbo-api</module>
         <module>dubbo-provider</module>
         <module>dubbo-consumer</module>
     </modules>

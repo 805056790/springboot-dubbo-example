@@ -4,6 +4,7 @@
 
 package x.springboot.dubbo.api.service;
 
+
 import x.springboot.dubbo.api.model.Response;
 import x.springboot.dubbo.api.model.User;
 
@@ -16,10 +17,10 @@ public interface DubboService {
     /**
      * mock user login
      *
-     * @param userName username
+     * @param username username
      * @param password pwd
      * @return user info
      */
-    Response<User> mockLogin(String userName, String password);
+    Response<User> mockLogin(String username, String password);
 
 }

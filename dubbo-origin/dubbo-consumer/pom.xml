@@ -14,7 +14,7 @@
     <dependencies>
         <dependency>
             <groupId>x.springboot.dubbo</groupId>
-            <artifactId>dubbo-api</artifactId>
+            <artifactId>spring-boot-dubbo-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 

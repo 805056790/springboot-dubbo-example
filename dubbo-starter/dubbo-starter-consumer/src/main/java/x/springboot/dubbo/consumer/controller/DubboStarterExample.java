@@ -1,7 +1,3 @@
-/*
- * Copyright (c) 2016. 杭州端点网络科技有限公司.  All rights reserved.
- */
-
 package x.springboot.dubbo.consumer.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
@@ -14,17 +10,15 @@ import x.springboot.dubbo.api.model.User;
 import x.springboot.dubbo.api.service.DubboService;
 
 /**
- * @Author : panxin
- * Date  : 2016-07-15
+ * @author panxin
  */
 @Slf4j
 @RestController
-public class DubboExample {
+public class DubboStarterExample {
 
     @Reference
     private DubboService dubboService;
 
-    // just Get
     @GetMapping("/api/example/login")
     public User login(@RequestParam(value = "username", required = false, defaultValue = "springboot") String username,
                       @RequestParam(value = "password", required = false, defaultValue = "dubbo") String password) {
