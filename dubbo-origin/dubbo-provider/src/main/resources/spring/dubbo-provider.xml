@@ -14,6 +14,8 @@
 
     <dubbo:annotation package="x.springboot.dubbo.provider.api"/>
 
+    <dubbo:provider port="-1"/>
+
     <dubbo:service retries="0" version="0.0.0" interface="x.springboot.dubbo.api.service.DubboService"
                    ref="dubboServiceImpl"/>
 
